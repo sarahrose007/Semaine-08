@@ -1,0 +1,222 @@
+<!-- omit in toc -->
+# Responsive Design
+
+- [Quest-ce que c'est que le responsive design](#quest-ce-que-cest-que-le-responsive-design)
+- [Viewport](#viewport)
+  - [Comment configurer le viewport](#comment-configurer-le-viewport)
+  - [Taille du contenu dans le viewport](#taille-du-contenu-dans-le-viewport)
+- [Vue en grille](#vue-en-grille)
+- [Media Queries](#media-queries)
+  - [Ajouter un breakpoint](#ajouter-un-breakpoint)
+  - [Toujours penser son site en Mobile First](#toujours-penser-son-site-en-mobile-first)
+  - [Des breakpoints typiques](#des-breakpoints-typiques)
+  - [Orientation: Portrait / Landscape](#orientation-portrait--landscape)
+  - [Cacher des éléments](#cacher-des-éléments)
+  - [Changer le taille d'une police](#changer-le-taille-dune-police)
+  - [Tester ses media queries](#tester-ses-media-queries)
+  - [En savoir plus](#en-savoir-plus)
+
+## Quest-ce que c'est que le responsive design
+
+Le Responsive Design fait en sorte que toutes vos pages s'affichent correctement sur tous les appareils possibles (smartphone, tablet, ordinateur,...).
+
+Le Responsive Design n'utilise que HTML et CSS. Pas de javascript ou de logiciel spécifique. On peut par contre utiliser des librairies spécifiques comme par exemple Bootstrap, Foundation, Skeleton,...
+
+Une page web doit afficher toujours le même contenu correctement sur les différents appareils et ne pas en supprimer parce que sur une résolution plus petite ce contenu ne pourrais pas s'afficher.
+
+On va donc utiliser le CSS pour redimensionner, déplacer, cacher, élargir ou rapetisser nos éléments.
+
+## Viewport
+
+Le viewport est la partie visible à l'utilisateur d'une page web. Il varie avec l'appareil, il sera plus petit sur un smartphone que sur un écran d'ordinateur. 
+
+Avant les tablettes et smartphones, les pages web étaient conçue seulement pour les écrans d'ordinateur, et c'était commun d'avoir des pages avec une taille fixe. Du coup, lorsque les tablettes et téléphones mobile sont apparu, on ne faisait que rétrécir la taille de la page pour qu'elle s'affiche. Ca fonctionnait mais ce n'était pas très lisible.
+
+### Comment configurer le viewport
+
+Depuis HTML5, on peut placer une balise `<meta>`qui va permettre de contrôler le viewport. Cette balise vous la voyez depuis un moment dans vos travaux:
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+`width=device-width` permet de fixer la largeur de la page en fonction de la largeur de l'écran (qui varie selon l'appareil)
+
+`initial-scale=1.0 ` permet de fixer le niveau de zoom initial au lancement de la page par le navigateur.
+
+### Taille du contenu dans le viewport
+
+Il faut éviter de placer des éléments qui sortiraient du viewport et qui pourraient créer du scrolling horizontale. Les utilisateurs ont l'habitudes de scroller de manière verticale, produire l'inverse pourrait amener à une mauvaise expérience utilisateur.
+
+Il ne faut pas non plus placer des éléments qui se basent sur une largeur de viewport spécifique pour être affiché correctement. Préféré du contenu flexible qui peut s'afficher correctement dans toutes les tailles de viewport.
+
+On va utiliser les media queries pour appliquer des styles différents à nos éléments en fonction des viewport que l'ont veut configurer.
+
+## Vue en grille
+
+On a déjà vu l'utilisation de grid, mais attention de ne pas confondre. Une grid en css peut avoir différentes utilisation. Tandis que penser son site en grille c'est juste une pratique pour faire du responsive design. 
+
+La plupart du temps, un site web est découpé en 12 colonnes. Chacune ayant un taille identique ou spécifique en fonction des besoins. Votre vue en grille représente 100% de la largeur du viewport.
+
+Voici un exemple de grille de 12 colonnes en CSS. 
+
+```css
+[class*="col-"] {
+  float: left;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+```
+
+On utilise ces classes pour définir le nombres de colonnes que notre élément doit prendre. Cette technique est notamment utilisé dans Bootstrap. Seulement telle qu'elle c'est responsive, jusqu'à un certain stade, dès que l'on passe sur une résolution fort basse, le tout est écrasé. De nouveau, on va voir les Media Queries un peu plus bas pour remédier à cela.
+
+Ensuite en HTML il faut que l'ensemble des colonnes utilisés dans une rangée s'additionne pour faire 12.
+
+```html
+<div class="row">
+  <div class="col-3">...</div> <!-- 25% -->
+  <div class="col-9">...</div> <!-- 75% -->
+</div>
+```
+
+[Voir un exemple](https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_styles)
+
+## Media Queries
+
+Media Query est une technique en CSS3, on utilise `@media` pour inclure des propriétés CSS qui devront être appliquées que si une certaine condition est vraie. 
+
+```css
+/* Si la largeur de la fenêtre du navigateur est de 600px ou moins, le fond de body deviendra rouge*/
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: red;
+  }
+}
+```
+
+### Ajouter un breakpoint
+
+Un breakpoint est donc une règle (généralement une largeur) qui doit être vraie pour appliquer les propriétés qui lui sont associées.
+
+Dans l'exemple vu plus haut, on avait nos classes de nos 12 colonnes, mais si vous avez [regardé l'exemple](https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_styles) et essayez de réduire votre fenêtre de navigateur, le site devient peu lisible une fois que le viewport est trop petit. 
+
+On va ajouter le code suivant pour régler notre soucis:
+
+```css
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+```
+
+Voici [le résultat](https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_breakpoints)
+
+### Toujours penser son site en Mobile First
+
+Il est conseillé de toujours penser son site d'abord pour l'affichage sur smartphone plutôt que sur desktop. Cela permet de s'assurer d'une page plus rapide pour l'affichage sur ces petits appareils. 
+
+Donc au lieu d'appliquer le breakpoint pour l'affichage mobile, on va le faire pour l'affichage desktop.
+
+```css
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  ...
+  .col-12 {width: 100%;}
+}
+```
+
+### Des breakpoints typiques
+
+Il est tout a fait possible d'ajouter autant de breakpoint que vous voulez. Voici quelques uns des plus utilisés.
+
+```css
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
+```
+
+### Orientation: Portrait / Landscape
+
+Vous pouvez utiliser les media queries pour changer le style de votre page en fonction de l'orientation du navigateur.
+
+```css
+@media only screen and (orientation: landscape) {
+  body {
+    background-color: red;
+  }
+}
+```
+
+### Cacher des éléments
+
+Il est également possible de cacher certains éléments via les media queries. Attention à ne pas masquer des infos importantes mais plutôt des éléments de style non-essentiel à votre page.
+
+```css
+/* If the screen size is 600px wide or less, hide the element */
+@media only screen and (max-width: 600px) {
+  div.example {
+    display: none;
+  }
+}
+```
+
+### Changer le taille d'une police
+
+```css
+/* If the screen size is 601px or more, set the font-size of <div> to 80px */
+@media only screen and (min-width: 601px) {
+  div.example {
+    font-size: 80px;
+  }
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 600px) {
+  div.example {
+    font-size: 30px;
+  }
+}
+```
+
+### Tester ses media queries
+
+C'est bien beau de créer tout un ensemble de règles pour les différents appareils. Mais on ne fait 
+
+### En savoir plus
+
+- [Toutes les propriétés de `@media`](https://www.w3schools.com/cssref/css3_pr_mediaquery.asp)
+- [Le mode responsive de Firefox](https://developer.mozilla.org/en-US/docs/Tools/Responsive_Design_Mode)
+
+
+
+Messures? Comment afficher son site
