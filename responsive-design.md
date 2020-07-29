@@ -30,7 +30,7 @@ On va donc utiliser le CSS pour redimensionner, déplacer, cacher, élargir ou r
 
 Le viewport est la partie visible à l'utilisateur d'une page web. Il varie avec l'appareil, il sera plus petit sur un smartphone que sur un écran d'ordinateur. 
 
-Avant les tablettes et smartphones, les pages web étaient conçue seulement pour les écrans d'ordinateur, et c'était commun d'avoir des pages avec une taille fixe. Du coup, lorsque les tablettes et téléphones mobile sont apparu, on ne faisait que rétrécir la taille de la page pour qu'elle s'affiche. Ca fonctionnait mais ce n'était pas très lisible.
+Avant les tablettes et smartphones, les pages web étaient conçue seulement pour les écrans d'ordinateur, et c'était commun d'avoir des pages avec une taille fixe. Du coup, lorsque les tablettes et téléphones mobile sont apparu, on ne faisait que rétrécir la taille de la page pour qu'elle s'affiche. Ca fonctionnait mais ce n'était pas toujours très lisible.
 
 ### Comment configurer le viewport
 
@@ -104,6 +104,8 @@ Media Query est une technique en CSS3, on utilise `@media` pour inclure des prop
   }
 }
 ```
+
+:book: [La documentation des MQ](https://www.w3schools.com/cssref/css3_pr_mediaquery.asp)
 
 ### Ajouter un breakpoint
 
@@ -210,13 +212,19 @@ Il est également possible de cacher certains éléments via les media queries. 
 
 ### Tester ses media queries
 
-C'est bien beau de créer tout un ensemble de règles pour les différents appareils. Mais on ne fait 
+C'est bien beau de créer tout un ensemble de règles pour les différents appareils. Mais on ne fait pas ça de tête et sans tester. Pour vous aidez il n'y a pas besoin de lancer votre site sur votre smartphone ou tablette, mais à tout simplement utiliser les outils de développement de chrome/firefox.
+
+Appuyez sur `F12` et cliquez ensuite sur l'icône suivante: ![mobileview](images/mobileview.png)
+
+Une fois l'interface ouverte vous pouvez sélectionner différentes résolution pré-définie, en rajouter vous même ou tout simplement utiliser le mode `responsive` pour tester la réactivité de votre site.
+
+![chrome](images/chrome.png) **Avantage de chrome:** il est possible de "voir" vos media queries en cliquant sur les 3 petits points en haut à droite. Cela permet d'avoir une visualisation des différentes tailles configurées et de redimensionner votre site immédiatement en cliquant sur une de ces tailles.
+
+![show-media-query](images/showmediaquery.png)
+![media-query](images/mediaquery.png)
 
 ### En savoir plus
 
 - [Toutes les propriétés de `@media`](https://www.w3schools.com/cssref/css3_pr_mediaquery.asp)
 - [Le mode responsive de Firefox](https://developer.mozilla.org/en-US/docs/Tools/Responsive_Design_Mode)
-
-
-
-Messures? Comment afficher son site
+- [Le mode responsive de Chrome](https://developers.google.com/web/tools/chrome-devtools/device-mode)
