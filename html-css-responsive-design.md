@@ -27,7 +27,7 @@ Une page web doit afficher toujours le même contenu correctement sur les diffé
 
 On va donc utiliser le CSS pour redimensionner, déplacer, cacher, élargir ou rapetisser nos éléments.
 
-[Revenir au top](#Responsive-Design)
+[:arrow_up:Revenir au top](#Responsive-Design)
 
 ## Viewport
 
@@ -35,7 +35,7 @@ Le viewport est la partie visible à l'utilisateur d'une page web. Il varie avec
 
 Avant les tablettes et smartphones, les pages web étaient conçue seulement pour les écrans d'ordinateur, et c'était commun d'avoir des pages avec une taille fixe. Du coup, lorsque les tablettes et téléphones mobile sont apparu, on ne faisait que rétrécir la taille de la page pour qu'elle s'affiche. Ca fonctionnait mais ce n'était pas toujours très lisible.
 
-[Revenir au top](#Responsive-Design)
+[:arrow_up:Revenir au top](#Responsive-Design)
 
 ### Comment configurer le viewport
 
@@ -49,7 +49,7 @@ Depuis HTML5, on peut placer une balise `<meta>`qui va permettre de contrôler l
 
 `initial-scale=1.0 ` permet de fixer le niveau de zoom initial au lancement de la page par le navigateur.
 
-[Revenir au top](#Responsive-Design)
+[:arrow_up:Revenir au top](#Responsive-Design)
 
 ### Taille du contenu dans le viewport
 
@@ -59,7 +59,7 @@ Il ne faut pas non plus placer des éléments qui se basent sur une largeur de v
 
 On va utiliser les media queries pour appliquer des styles différents à nos éléments en fonction des viewport que l'ont veut configurer.
 
-[Revenir au top](#Responsive-Design)
+[:arrow_up:Revenir au top](#Responsive-Design)
 
 ## Images responsive
 
@@ -80,7 +80,7 @@ Une image responsive est une image qui se redimensionne correctement sur n'impor
 
 [En savoir plus](https://www.w3schools.com/tags/tag_picture.asp)
 
-[Revenir au top](#Responsive-Design)
+[:arrow_up:Revenir au top](#Responsive-Design)
 
 ## Vue en grille
 
@@ -122,7 +122,7 @@ Ensuite en HTML il faut que l'ensemble des colonnes utilisés dans une rangée s
 
 [Voir un exemple](https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_styles)
 
-[Revenir au top](#Responsive-Design)
+[:arrow_up:Revenir au top](#Responsive-Design)
 
 ## Media Queries
 
@@ -139,7 +139,7 @@ Media Query est une technique en CSS3, on utilise `@media` pour inclure des prop
 
 :book: [La documentation des MQ](https://www.w3schools.com/cssref/css3_pr_mediaquery.asp)
 
-[Revenir au top](#Responsive-Design)
+[:arrow_up:Revenir au top](#Responsive-Design)
 
 ### Ajouter un breakpoint
 
@@ -160,7 +160,7 @@ On va ajouter le code suivant pour régler notre soucis:
 
 Voici [le résultat](https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_breakpoints)
 
-[Revenir au top](#Responsive-Design)
+[:arrow_up:Revenir au top](#Responsive-Design)
 
 ### Toujours penser son site en Mobile First
 
@@ -182,7 +182,7 @@ Donc au lieu d'appliquer le breakpoint pour l'affichage mobile, on va le faire p
 }
 ```
 
-[Revenir au top](#Responsive-Design)
+[:arrow_up:Revenir au top](#Responsive-Design)
 
 ### Des breakpoints typiques
 
@@ -205,7 +205,7 @@ Il est tout a fait possible d'ajouter autant de breakpoint que vous voulez. Voic
 @media only screen and (min-width: 1200px) {...}
 ```
 
-[Revenir au top](#Responsive-Design)
+[:arrow_up:Revenir au top](#Responsive-Design)
 
 ### Orientation: Portrait / Landscape
 
@@ -219,7 +219,7 @@ Vous pouvez utiliser les media queries pour changer le style de votre page en fo
 }
 ```
 
-[Revenir au top](#Responsive-Design)
+[:arrow_up:Revenir au top](#Responsive-Design)
 
 ### Cacher des éléments
 
@@ -234,7 +234,7 @@ Il est également possible de cacher certains éléments via les media queries. 
 }
 ```
 
-[Revenir au top](#Responsive-Design)
+[:arrow_up:Revenir au top](#Responsive-Design)
 
 ### Changer le taille d'une police
 
@@ -254,7 +254,7 @@ Il est également possible de cacher certains éléments via les media queries. 
 }
 ```
 
-[Revenir au top](#Responsive-Design)
+[:arrow_up:Revenir au top](#Responsive-Design)
 
 ### Tester ses media queries
 
@@ -269,7 +269,7 @@ Une fois l'interface ouverte vous pouvez sélectionner différentes résolution 
 ![show-media-query](images/showmediaquery.png)
 ![media-query](images/mediaquery.png)
 
-[Revenir au top](#Responsive-Design)
+[:arrow_up:Revenir au top](#Responsive-Design)
 
 ### En savoir plus
 
@@ -277,4 +277,4 @@ Une fois l'interface ouverte vous pouvez sélectionner différentes résolution 
 - [Le mode responsive de Firefox](https://developer.mozilla.org/en-US/docs/Tools/Responsive_Design_Mode)
 - [Le mode responsive de Chrome](https://developers.google.com/web/tools/chrome-devtools/device-mode)
 
-[Revenir au top](#Responsive-Design)
+[:arrow_up:Revenir au top](#Responsive-Design)
