@@ -1,6 +1,6 @@
 # Créez un média collaboratif en PHP et MySQL
 
-Bonjour à tous et bienvenue pour ce premier projet de notre second cycle d'aprentissage.
+Bonjour à tous et bienvenue pour ce premier projet de notre second cycle d'apprentissage.
 Comme indiqué dans le titre vous allez être amenés à créer une plateforme permettant aux utilisateurs de poster des articles.
 À titre d'exemple voici quelques sites se basant sur ce principe:
 
@@ -10,20 +10,20 @@ Comme indiqué dans le titre vous allez être amenés à créer une plateforme p
 
 ## Votre client
 
-Je vous présente Jean Ratpahune, Sam Shanboule et Jenny Peurin. Une joyeuse bande de jeunes entrepreneurs avec une bonne idée: créer un média collaboratif, une plateforme sur laquelle les utilisateur pourront délivrer leurs connaissances sur des sujets divers sous format d'articles et de billets d'humeur.
+Je vous présente Jean Ratpahune, Sam Shanboule et Jenny Peurin. Une joyeuse bande de jeunes entrepreneurs avec une bonne idée: créer un média collaboratif, une plateforme sur laquelle les utilisateurs pourront délivrer leurs connaissances sur des sujets divers sous format d'articles et de billets d'humeur.
 Ils sont tout trois plein d'entrain et ont déjà réussi à démarcher partenariat et accompagnement pour leur projet, mais aucun d'eux n'a de compétence en programmation.
-Vous voici donc recruté pour mettre réaliser leur cahier des charges.
+Vous voici donc recruté pour réaliser leur cahier des charges.
 
 ## Le fameux sacro-saint cahier
 
-Nos trois proteurs de projets ont décri de manière spécifique leurs besoins.
+Nos trois porteurs de projets ont décri de manière spécifique leurs besoins.
 
 ### Les fonctionnalités:
 
 - La possibilité pour un potentiel utilisateur de **s'inscrire** et de **se connecter** sur la plateforme
 - L'utilisateur enregistré simple peut **publier** des articles, les **modifier**, les **supprimer**, **consulter** les profiles des autres utilisateurs
 - L'utilisateur non enregistré peut uniquement consulter les articles et le profile de l'utilisateur simple
-- La page d'acceuil doit **recenser** les articles
+- La page d'accueil doit **recenser** les articles
 - Chaque utilisateur a le droit de **modifier** ses informations via un onglet "settings"
 - Chaque profile d'utilisateur **contient** l'ensemble de leurs articles sous forme de vignettes titre / image
 - Chacune de ces vignettes comporte un **lien** vers l'article complet auquel **une page unique est dédiée**
@@ -33,18 +33,18 @@ Nos trois proteurs de projets ont décri de manière spécifique leurs besoins.
 Ils se remettent entièrement à votre designer concernant l'aspect et expérience utilisateur de leur plateforme
 Cependant votre projet devra être créé dans l'optique **"mobile first"** avec un design **responsive**.
 
-### Les technologies: 
+### Les technologies:
 
 - PHP
 - MySQL
 - Laragon (serveur local)
 - HTML5
-- Bootstrap et Sass
+- CSS - Media Queries
 - Javascript
 
 ## Le déroulement de votre projet
 
-### Etape 1
+### Étape 1
 
 La première étape est de distribuer les rôles au sein de votre groupe
 Posez vous les bonnes questions:
@@ -53,12 +53,12 @@ Posez vous les bonnes questions:
 - Ai-je envie de développer la logique client de l'application ?
 - Ou plutôt la logique serveur ?
 - Ou les deux ?
-- Ai-je envie d'explorer la gestion du projet ? 
+- Ai-je envie d'explorer la gestion du projet ?
 - Ai-je envie de travailler sur l'analyse fonctionnelle et le testing des fonctionnalités ?
 
 Concertez vous, prenez le temps de bien définir vos rôles par écrit.
 
-### Etape 2
+### Étape 2
 
 Maintenant que les rôles sont répartis il s'agit de découper votre projet sous forme de fonctionnalités et tâches à remplir pour créer ces dernières.
 Je vous conseille fortement de la réaliser d'abord sur papier / outils de traitement de texte.
