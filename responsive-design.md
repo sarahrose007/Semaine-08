@@ -19,6 +19,8 @@
 
 ## Qu'est-ce que c'est que le responsive design
 
+![rwd-screens](images/responsive-screens.gif)
+
 Le Responsive Design fait en sorte que toutes vos pages s'affichent correctement sur tous les appareils possibles (smartphone, tablet, ordinateur,...).
 
 Le Responsive Design n'utilise que HTML et CSS. Pas de javascript ou de logiciel spécifique. On peut par contre utiliser des librairies spécifiques comme par exemple Bootstrap, Foundation, Skeleton,...
@@ -273,6 +275,7 @@ Une fois l'interface ouverte vous pouvez sélectionner différentes résolution 
 
 ### En savoir plus
 
+- [Les bonnes pratiques en Responsive Design](rd-bonnes-pratique.md)
 - [Toutes les propriétés de `@media`](https://www.w3schools.com/cssref/css3_pr_mediaquery.asp)
 - [Le mode responsive de Firefox](https://developer.mozilla.org/en-US/docs/Tools/Responsive_Design_Mode)
 - [Le mode responsive de Chrome](https://developers.google.com/web/tools/chrome-devtools/device-mode)

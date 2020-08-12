@@ -29,6 +29,8 @@ div{
 
 ![px](images/mesures/px.png)
 
+[:arrow_up:Revenir au top](#Mesures)
+
 ## %
 
 Taille définie en fonction de la largeur du navigateur et ensuite des contenants parents.
@@ -54,6 +56,8 @@ div{
 ```
 
 ![%](images/mesures/poucentage.png)
+
+[:arrow_up:Revenir au top](#Mesures)
 
 ## em
 
@@ -83,6 +87,8 @@ div{
 
 ![%](images/mesures/em.png)
 
+[:arrow_up:Revenir au top](#Mesures)
+
 ## rem
 
 Dimension relative proportionnelle à la taille de caractère (font-size) définie dans la balise `<html>`ou dans le sélecteur `::root`. 
@@ -104,6 +110,8 @@ div:last-child{ width:10.5rem; }
 
 ![%](images/mesures/rem.png)
 
+[:arrow_up:Revenir au top](#Mesures)
+
 ## vw / vh
 
 Mesures relatives à la taille du viewport (fenêtre du navigateur). Une unité représente 1% de la dimension du contenant.
@@ -122,15 +130,19 @@ div{width:50vw;}
 
 ![%](images/mesures/vw.png)
 
+[:arrow_up:Revenir au top](#Mesures)
+
 ### vmin / vmax
 
 Équivalent à la taille minimum ou maximum du viewport.
+
+[:arrow_up:Revenir au top](#Mesures)
 
 ## pt, pc
 
 Mesure dédiées à l'impression de caractères sur la base de 72dpi (1 inches = 72pt) pour le **p**oin**t** et sur 6dpi (1 inches = 6pc) pour le **p**i**c**as. 
 
-On utilise les `points`et `picas`pour les feuilles de styles destinées à l'impression.
+On utilise les `points`et `picas`![pika](images/mesures/pika.png)pour les feuilles de styles destinées à l'impression.
 
 On évite ces unités pour tout autre utilisation.
 
@@ -144,7 +156,7 @@ h1{font-size: 50pt}
 
 ![point](images/mesures/point.png)
 
-![pika](images/mesures/pika.png)
+[:arrow_up:Revenir au top](#Mesures)
 
 ## mm / cm / in
 
@@ -163,3 +175,7 @@ img{width: 10cm;}
 ```
 
 ![cm](images/mesures/cm.png)
+
+[:arrow_up:Revenir au top](#Mesures)
+
+//TODO: finir le pdf!!

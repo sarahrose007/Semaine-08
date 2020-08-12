@@ -12,6 +12,7 @@
 - [9. Pensez aux méthodes de saisie](#9-pensez-aux-méthodes-de-saisie)
 - [10. Testez votre design sur des appareils actuels](#10-testez-votre-design-sur-des-appareils-actuels)
 - [Bonus](#bonus)
+- [Source](#source)
 
 ## 1. Pensez petit... et grand
 
@@ -19,13 +20,13 @@ On pense souvent que le responsive design ce n'est que d'afficher notre contenu 
 
 Le processus de réflexion mis en place doit bénéficier toutes les résolutions, pour ce faire on doit prioriser le contenu en fonction des écrans, il suffit de faire un petit schéma sur papier et classer les éléments par priorité. Faire le tri entre ce qui doit s'afficher obligatoirement sur mobile et ce qui n'est pas nécessaire. Faire de même pour les éléments sur grand écran. Pensez aux breakpoints intermédiaires qui ne sont pas spécialement répandu pour le moment, il se pourrait qu'ils deviennent critique dans les prochains mois avec la sortie d'un nouvel écran.
 
-[Revenir au top](#10-Bonnes-pratiques-en-Responsive-Design)
+[:arrow_up:Revenir au top](#10-Bonnes-pratiques-en-Responsive-Design)
 
 ## 2. Pensez au contexte
 
 Il est important aussi de penser au contexte dans son processus de rendre responsive son design. En effet, il ne suffit pas de réussir a placer tous les éléments sur tous les écrans mais aussi de réfléchir à où afficher ces éléments en fonctions de l'utilisation du visiteur. Imaginez le site d'un restaurant, si celui-ci est visité sur grand écran il est fort à parié que le visiteur est chez lui et qu'il cherche des infos sur comment se rendre sur place ou de quel type de plats il va pouvoir savourer. Mais si il est sur son smartphone il est peut-être déjà dans le restaurant et cherche des informations quant à la valeur nutritionnel des plats proposés. Du coup, il faut penser à rendre ces informations visibles rapidement.
 
-[Revenir au top](#10-Bonnes-pratiques-en-Responsive-Design)
+[:arrow_up:Revenir au top](#10-Bonnes-pratiques-en-Responsive-Design)
 
 ## 3. Réduire intelligemment le contenu
 
@@ -37,7 +38,7 @@ Ce processus de réflexion ne sera que bénéfique une fois que vous passerez su
 
 Il faut apprendre à être sans pitié avec votre contenu pour que votre design ne soit pas trop fouillis.
 
-[Revenir au top](#10-Bonnes-pratiques-en-Responsive-Design)
+[:arrow_up:Revenir au top](#10-Bonnes-pratiques-en-Responsive-Design)
 
 ## 4. Priorisez le contenu différemment
 
@@ -45,7 +46,7 @@ Passer de plusieurs colonnes sur grand écran à une seule colonne sur petit éc
 
 Prenez comme exemple une liste d'articles sur un grand écran, chaque article aurait un titre, un aperçu du contenu, une photo, le nom de l'auteur et la date de publication. Lorsque cette liste est affichée sur un petit appareil, il est préférable de cacher la photo par exemple, pour gagner de la place.
 
-[Revenir au top](#10-Bonnes-pratiques-en-Responsive-Design)
+[:arrow_up:Revenir au top](#10-Bonnes-pratiques-en-Responsive-Design)
 
 ## 5. Navigation évolutive
 
@@ -57,7 +58,7 @@ Attention tout de même, changer votre navigation ne doit pas être synonyme de 
 
 Un exemple, un menu déroulant qui s'affiche quand on passe notre souris au dessus ne sera pas du tout utilisable par un utilisateur sur smartphone.
 
-[Revenir au top](#10-Bonnes-pratiques-en-Responsive-Design)
+[:arrow_up:Revenir au top](#10-Bonnes-pratiques-en-Responsive-Design)
 
 ## 6. La qualité des images VS vitesse de téléchargement
 
@@ -67,13 +68,13 @@ Le principale coupable se sont les images, et encore plus les images mal optimis
 
 Reconsidérez aussi l'intérêt d'un carrousel d'image en page d'accueil, ceux-ci doivent charger plusieurs images de hautes qualités et du javascript.
 
-[Revenir au top](#10-Bonnes-pratiques-en-Responsive-Design)
+[:arrow_up:Revenir au top](#10-Bonnes-pratiques-en-Responsive-Design)
 
 ## 7. Utiliser des icônes
 
 Si vous pouvez utilisez une icône à la place d'un texte explicatif, faites-le! Cela permet de prendre moins de place dans votre design. Généralement votre icône peut être en SVG et du coup est redimensionnable et vous pouvez l'animer grâce au CSS.
 
-[Revenir au top](#10-Bonnes-pratiques-en-Responsive-Design)
+[:arrow_up:Revenir au top](#10-Bonnes-pratiques-en-Responsive-Design)
 
 ## 8. Faites attention à la taille de vos polices
 
@@ -87,28 +88,30 @@ La typographie est une partie importante de votre web design, qu'il soit respons
 - Vérifiez d'avoir un contraste assez élevé entre vos textes et leurs background-color. Pareil pour vos liens. Tout doit être toujours visible, si vous devez plissez les yeux pour les voir, ce n'est pas bon.
 
 
-[Revenir au top](#10-Bonnes-pratiques-en-Responsive-Design)
+[:arrow_up:Revenir au top](#10-Bonnes-pratiques-en-Responsive-Design)
 
 ## 9. Pensez aux méthodes de saisie
 
 Il est normal pour un utilisateur d'ordinateur d'utiliser une souris et un clavier pour naviguer sur le net, mais ce n'est pas forcément le cas pour quelqu'un qui est sur tablette ou mobile. Du coup, il faut pensez par exemple à agrandir la taille vos champs de formulaire/sélection pour permettre à l'utilisateur de cliquez sur le bon champ facilement.
 
-[Revenir au top](#10-Bonnes-pratiques-en-Responsive-Design)
+[:arrow_up:Revenir au top](#10-Bonnes-pratiques-en-Responsive-Design)
 
 ## 10. Testez votre design sur des appareils actuels
 
 Une fois que vous avez réfléchi à vos règles pour votre Responsive Design, il est de bon ton de tester leurs efficacités sur les appareils en questions. Prenez votre smartphone, votre tablette, votre ordinateur et tester les limites de votre design. Retournez votre design dans tous les sens et expérimentez un max pour trouver des défauts. Une bonne idée aussi, c'est de faire utiliser votre design par des proches avec des appareils différents.
 
-[Revenir au top](#10-Bonnes-pratiques-en-Responsive-Design)
+[:arrow_up:Revenir au top](#10-Bonnes-pratiques-en-Responsive-Design)
 
 ## Bonus
 
 **Inspirez-vous, codez et testez!**
 
-Il n'y a pas de mal a se renseigner sur comment les plus grands sites font pour rendre leur site responsive, que ce soit au niveau de la navigation ou de la gestion du contenu. 
+Il n'y a pas de mal a se renseigner sur comment les plus grands sites font pour rendre leur site responsive, que ce soit au niveau de la navigation ou de la gestion du contenu.
 
 Ensuite passez dans votre code et codez un maximum de breakpoints et de propriétés CSS. Testez constamment vos changements pour vous assurez du bon fonctionnement.
 
-[Article original](https://thenextweb.com/dd/2015/10/19/10-rules-of-best-practice-for-responsive-design/)
 
-[Revenir au top](#10-Bonnes-pratiques-en-Responsive-Design)
+## Source
+[:book:Article original](https://thenextweb.com/dd/2015/10/19/10-rules-of-best-practice-for-responsive-design/)
+
+[:arrow_up:Revenir au top](#10-Bonnes-pratiques-en-Responsive-Design)
