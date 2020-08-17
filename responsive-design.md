@@ -15,7 +15,7 @@
   - [Cacher des éléments](#cacher-des-éléments)
   - [Changer le taille d'une police](#changer-le-taille-dune-police)
   - [Tester ses media queries](#tester-ses-media-queries)
-  - [En savoir plus](#en-savoir-plus)
+- [En savoir plus](#en-savoir-plus)
 
 ## Qu'est-ce que c'est que le responsive design
 
@@ -50,6 +50,8 @@ Depuis HTML5, on peut placer une balise `<meta>`qui va permettre de contrôler l
 `width=device-width` permet de fixer la largeur de la page en fonction de la largeur de l'écran (qui varie selon l'appareil)
 
 `initial-scale=1.0 ` permet de fixer le niveau de zoom initial au lancement de la page par le navigateur.
+
+[Exemple de scale](https://www.w3schools.com/css/css_rwd_viewport.asp)
 
 [:arrow_up:Revenir au top](#Responsive-Design)
 
@@ -273,11 +275,11 @@ Une fois l'interface ouverte vous pouvez sélectionner différentes résolution 
 
 [:arrow_up:Revenir au top](#Responsive-Design)
 
-### En savoir plus
+## En savoir plus
 
 - [Les bonnes pratiques en Responsive Design](rd-bonnes-pratique.md)
 - [Toutes les propriétés de `@media`](https://www.w3schools.com/cssref/css3_pr_mediaquery.asp)
-- [Le mode responsive de Firefox](https://developer.mozilla.org/en-US/docs/Tools/Responsive_Design_Mode)
+- [Le mode responsive de Firefox](https://developer.mozilla.org/fr/docs/Outils/Vue_adaptative)
 - [Le mode responsive de Chrome](https://developers.google.com/web/tools/chrome-devtools/device-mode)
 
 [:arrow_up:Revenir au top](#Responsive-Design)

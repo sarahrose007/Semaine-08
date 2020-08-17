@@ -1,8 +1,9 @@
+<!-- omit in toc -->
 # Mesures
 
 Lorsque l'on veut définir la taille d'un de nos éléments on a plusieurs choix concernant l'unité à utiliser. Vous avez certainement utilisé des `px` et vu des `em`, `rem`, `pt`,...Voyons ensemble à quoi correspond ces différentes unités et dans quels cas les utiliser.
 
-- [Mesures](#mesures)
+- [Les unités de mesures](#les-unités-de-mesures)
   - [px](#px)
   - [%](#)
   - [em](#em)
@@ -11,8 +12,11 @@ Lorsque l'on veut définir la taille d'un de nos éléments on a plusieurs choix
     - [vmin / vmax](#vmin--vmax)
   - [pt, pc](#pt-pc)
   - [mm / cm / in](#mm--cm--in)
+- [Calcul des dimensions d'un bloc](#calcul-des-dimensions-dun-bloc)
 
-## px
+## Les unités de mesures
+
+### px
 
 Unité de mesure en pixels. La taille des objets et des polices de caractères se réfère à la concentration de pixels de l'écran (résolution de l'écran).
 
@@ -31,7 +35,7 @@ div{
 
 [:arrow_up:Revenir au top](#Mesures)
 
-## %
+### %
 
 Taille définie en fonction de la largeur du navigateur et ensuite des contenants parents.
 
@@ -59,7 +63,7 @@ div{
 
 [:arrow_up:Revenir au top](#Mesures)
 
-## em
+### em
 
 Dimension relative proportionnelle à la taille de caractère (font-size) définie pour la balise `<body>` ou dans une balise parent direct.
 
@@ -89,7 +93,7 @@ div{
 
 [:arrow_up:Revenir au top](#Mesures)
 
-## rem
+### rem
 
 Dimension relative proportionnelle à la taille de caractère (font-size) définie dans la balise `<html>`ou dans le sélecteur `::root`. 
 
@@ -112,7 +116,7 @@ div:last-child{ width:10.5rem; }
 
 [:arrow_up:Revenir au top](#Mesures)
 
-## vw / vh
+### vw / vh
 
 Mesures relatives à la taille du viewport (fenêtre du navigateur). Une unité représente 1% de la dimension du contenant.
 
@@ -132,13 +136,15 @@ div{width:50vw;}
 
 [:arrow_up:Revenir au top](#Mesures)
 
-### vmin / vmax
+#### vmin / vmax
 
-Équivalent à la taille minimum ou maximum du viewport.
+Équivalent à la taille minimum ou maximum du viewport. Utilise l'orientation portrait ou paysage.
+ 
+[:book:Article](http://thenewcode.com/1137/MinMaxing-Understanding-vMin-and-vMax-in-CSS)
 
 [:arrow_up:Revenir au top](#Mesures)
 
-## pt, pc
+### pt, pc
 
 Mesure dédiées à l'impression de caractères sur la base de 72dpi (1 inches = 72pt) pour le **p**oin**t** et sur 6dpi (1 inches = 6pc) pour le **p**i**c**as. 
 
@@ -158,7 +164,7 @@ h1{font-size: 50pt}
 
 [:arrow_up:Revenir au top](#Mesures)
 
-## mm / cm / in
+### mm / cm / in
 
 Mesures dédiées à l'impression pour définir la taille d'un objet à l'impression.
 
@@ -178,4 +184,19 @@ img{width: 10cm;}
 
 [:arrow_up:Revenir au top](#Mesures)
 
-//TODO: finir le pdf!!
+## Calcul des dimensions d'un bloc
+
+Par défaut la taille réelle d'un élément est calculé en prenant en compte sa width et ses border et padding. Cela peut être un peu compliqué par moment surtout pour le responsive design. Du coup il est possible de changer cela grâce à la propriété `box-sizing`
+
+```css
+.element{box-sizing: content-box}
+```
+
+![content-box](images/mesures/content-box.png)
+
+```css
+.element{box-sizing: border-box}
+```
+
+![border-box](images/mesures/border-box.png)
+
